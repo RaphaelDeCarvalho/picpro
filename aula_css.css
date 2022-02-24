@@ -1,0 +1,13 @@
+/* CSS => Cascasing Style Sheet (Folha de estilo em cascata)  */
+
+/*
+
+seletor : {
+    propriedade: valor;
+    cor: vermelho;
+    } => Regra CSS
+
+*/
+header {
+    background-color: aquamarine;
+}

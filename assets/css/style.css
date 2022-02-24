@@ -1,0 +1,275 @@
+body {
+    background-color: #4a8864;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.cabecalho {
+    padding:20px 0 ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cabecalho figure img {
+    width: 100%;
+    max-width: 140px;
+}
+
+.cabecalho .container {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .cabecalho__logoPicpro {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    margin-right: 15px;
+}
+
+.secaoDetalhesConta {
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.secaoDetalhesConta__sobreUsuario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.secaoDetalhesConta__sobreUsuario p {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.secaoDetalhesConta__sobreUsuario img {
+    width: 100%;
+    max-width: 50px;
+}
+.secaoDetalhesConta__sobreUsuario .sources{
+    max-width: 40px;
+    margin-left: 40px;
+    transform: translate(430px, 0px);
+}
+.secaoDetalhesConta__sobreUsuario p strong {
+    display: block;
+    font-weight: bold;
+}
+
+.secaoDetalhesConta__sobreSaldo {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.secaoDetalhesConta__sobreSaldo p {
+    font-size: 18px;
+    line-height: 25px;
+}
+.secaoDetalhesConta__sobreSaldo p strong {
+    display: block;
+    font-weight: bold;
+}
+.secaoDetalhesConta__sobreSaldo img {
+    width: 100%;
+    max-width: 35px;
+    transform: translate(-255px, 12px);
+}
+.secaoDetalhesConta__sobreSaldo button {
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    padding: 15px 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.secaoDetalhesConta__opcoesTransacoes {
+    display: flex;
+    justify-content: space-between;
+}
+.secaoDetalhesConta__opcoesTransacoes li{
+    background-color: #1F6F54;
+    width: 145px;
+    height: 150px;
+    padding: 40px 0px 0px 25px;
+    border-radius: 20px;
+    
+}
+.secaoDetalhesConta__opcoesTransacoes img {
+    width: 100%;
+    max-width: 40px;
+}
+.secaoDetalhesConta__opcoesTransacoes li p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+    width: 80px;
+}
+.secaoTransacao{
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 15px solid #bdbdbd;
+    padding: 30px 0;
+}
+.secaoTransacao__avisoSelecao p{
+    font-size: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 30px 60px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+}
+.secaoTransacao__avisoSelecao img{
+    margin: 30px 0 90px;
+    width: 100%;
+}
+.secaoTransacao__qrCode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.secaoTransacao__qrCode p{
+    font-weight: bold;
+    margin: 15px 0 60px;
+}
+.secaoTransacao__qrCode button{
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1F6F54;
+    height: 60px;
+    width: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.secaoTransacao__qrCode a{
+    margin: 30px 0 90px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+.secaoTransacao__pix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+.secaoTransacao__pix img{
+    margin: 0 0 40px;
+}
+.secaoTransacao__boxOpcao {
+    display: flex;
+    margin: 10px 0;
+    border:1px solid #bdbdbd;
+    border-radius: 10px;
+    width: 460px;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.secaoTransacao__boxOpcao img{
+    width: 100%;
+    max-width: 80px;
+    margin: 15px 15px;
+}
+.secaoTransacao__boxOpcao p{
+    font-size: 16px;
+}
+.secaoTransacao__boleto {
+    margin: 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px;
+}
+.secaoTransacao__boleto img {
+    width: 100%;
+    max-width: 80px;
+}
+.secaoTransacao__boleto h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.secaoTransacao__boleto p{
+    margin: 0 0 30px;
+    font-size: 18px;
+}
+.secaoTransacao__boleto input {
+    border: 1px solid #D2D2D2;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 550px;
+    height: 50px;
+    padding: 0 50px;
+    color: #000;
+}
+.secaoTransacao__cobrar {
+    margin: 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px;
+}
+.secaoTransacao__cobrar img {
+    width: 100%;
+    max-width: 60px;
+    padding: 0 11px 0;
+}
+.secaoTransacao__cobrar h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.secaoTransacao__cobrar p{
+    margin: 0 0 30px;
+    font-size: 18px;
+}
+.secaoTransacao__boxOpcao p{
+    margin: 0;
+    font-size: 16px;
+}
+.secaoTransacao__boxOpcao strong {
+    display: block;
+    font-weight: bold;
+}
+.rodape {
+    background-color: #fff;
+}
+.rodade__menuPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rodade__menuItem {
+    text-align: center;
+
+}
+.rodade__menuItem a{
+    text-decoration: none;
+    
+}
+.rodade__menuItem img{
+    width: 100%;
+    max-width: 40px;
+}
+.rodade__menuItem p{
+
+    color: #424242;
+    text-decoration: solid;
+    margin: 15px 0 15px 0;
+}
+li.rodade__menuItem.rodade__menuItem--pagar {
+    transform: translate(0px, -25px);
+}
+.rodade__menuPrincipal .rodade__menuItem--pagar a img {
+    max-width: 80px;
+}
