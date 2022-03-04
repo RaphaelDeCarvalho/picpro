@@ -1,5 +1,5 @@
 body {
-    background-color: #4a8864;
+    background-color: #228664;
     font-family: 'Poppins', sans-serif;
 }
 .container{
@@ -35,28 +35,30 @@ body {
 .secaoDetalhesConta__sobreUsuario {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .secaoDetalhesConta__sobreUsuario p {
     font-size: 18px;
     margin-left: 15px;
 }
-
-.secaoDetalhesConta__sobreUsuario img {
-    width: 100%;
-    max-width: 50px;
-}
-.secaoDetalhesConta__sobreUsuario .sources{
-    max-width: 40px;
-    margin-left: 40px;
-    transform: translate(430px, 0px);
-}
 .secaoDetalhesConta__sobreUsuario p strong {
     display: block;
     font-weight: bold;
 }
-
+.secaoDetalhesConta__sobreUsuario img {
+    max-width: 50px;
+}
+.secaoDetalhesConta__sobreUsuario-.-nome {
+    display: flex;
+    align-items: center;
+}
+.secaoDetalhesConta__sobreUsuario-.-icones img {
+    margin-left: 50px;
+    width: 100%;
+    max-width: 40px;
+}
 .secaoDetalhesConta__sobreSaldo {
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     display: flex;
@@ -69,14 +71,16 @@ body {
     font-size: 18px;
     line-height: 25px;
 }
-.secaoDetalhesConta__sobreSaldo p strong {
-    display: block;
+.secaoDetalhesConta__sobreSaldo-.-valor {
+    display: flex;
+    align-items: center;
+}
+.secaoDetalhesConta__sobreSaldo- p {
     font-weight: bold;
 }
-.secaoDetalhesConta__sobreSaldo img {
-    width: 100%;
-    max-width: 35px;
-    transform: translate(-255px, 12px);
+.secaoDetalhesConta__sobreSaldo-.-valor img{
+    margin-left: 10px;
+    max-height: 21px;
 }
 .secaoDetalhesConta__sobreSaldo button {
     background-color: #fff;
@@ -115,7 +119,16 @@ body {
     border-radius: 20px 20px 0 0;
     border-bottom: 15px solid #bdbdbd;
     padding: 30px 0;
+    height: 420px;
+    cursor: pointer;
 }
+.secaoTransacao .container div {
+    display: none;
+}
+.secaoTransacao .container div.mostrar {
+    display: block;
+}
+
 .secaoTransacao__avisoSelecao p{
     font-size: 25px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
@@ -272,4 +285,44 @@ li.rodade__menuItem.rodade__menuItem--pagar {
 }
 .rodade__menuPrincipal .rodade__menuItem--pagar a img {
     max-width: 80px;
+}
+.secaoDetalhesConta__itemTransacao:hover{
+    background-color: #fff;
+    color: #1F6F54;
+}
+.secaoDetalhesConta__itemTransacao figure {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+.secaoDetalhesConta__itemTransacao--qrcode figure {
+    background-image: url("../img/qrcode.png");
+}
+.secaoDetalhesConta__itemTransacao--qrcode:hover figure{
+    background-image: url("../img/qrcode-verde.png");
+}
+.secaoDetalhesConta__itemTransacao--pix figure {
+    background-image: url("../img/pix.png");
+}
+.secaoDetalhesConta__itemTransacao--pix:hover figure {
+    background-image: url("../img/pix-verde.png");
+}
+.secaoDetalhesConta__itemTransacao--boleto figure {
+    background-image: url("../img/boleto-branco.png");
+    height: 31px;
+}
+.secaoDetalhesConta__itemTransacao--boleto:hover figure {
+    background-image: url("../img/boleto-verde.png");
+}
+.secaoDetalhesConta__itemTransacao--cobrar figure {
+    background-image: url("../img/cobrar-icon.png");
+    height: 33px;
+}
+.secaoDetalhesConta__itemTransacao--cobrar:hover figure {
+    background-image: url("../img/cobrar-verde.png");
+}
+.secaoDetalhesConta__itemTransacao figure img{
+    opacity: 0%;
 }
